@@ -1,1 +1,1 @@
-# phpmyadmin-mysql
+# MySQL and PhpMyAdmin Containers

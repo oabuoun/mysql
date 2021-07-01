@@ -9,7 +9,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - dbdata:/var/lib/mysql
+      - /data/mysql:/var/lib/mysql
       - ./init-sql:/docker-entrypoint-initdb.d
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -23,5 +23,3 @@ services:
     restart: always
     ports:
       - 8099:80
-volumes:
-  dbdata:

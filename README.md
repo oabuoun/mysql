@@ -22,3 +22,17 @@ docker exec -it mysql_dbms mysql --user=root --password
   ```bash
   docker exec -it pma apachectl -S
   ```
+
+  -- mysql-conf
+    |-- cert
+    |   |-- ca-cert.pem
+    |   |-- db.pem
+    |   |-- db.key
+    |   |-- db.csr
+    |
+  --  pma-conf
+    |-- cert
+    |   |-- ca-cert.pem
+    |   |-- pma-cert.pem
+    |   |-- pma-key.pem
+    |   |-- pma.csr

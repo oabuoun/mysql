@@ -1,0 +1,7 @@
+[Unit]
+Description=Start phpMyAdmin  MySQL on Boot
+After=default.target
+[Service]
+ExecStart=/home/ubuntu/phpmyadmin-mysql/service-launcher.sh
+[Install]
+WantedBy=default.target

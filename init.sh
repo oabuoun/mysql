@@ -29,4 +29,4 @@ $BASEDIR/service-installer.sh
 rm -rf init-sql/*
 
 rm .password
-rm init.sh
+mv init.sh .init.sh

@@ -6,6 +6,7 @@ services:
     container_name: mysql_dbms
     environment:
       MYSQL_ROOT_PASSWORD:
+    restart: always
     ports:
       - "3306:3306"
     volumes:
@@ -21,5 +22,5 @@ services:
       PMA_PORT: 3306
       PMA_ARBITRARY: 1
     restart: always
-    ports:
-      - 8099:80
+    #ports:
+    #  - 8099:80
